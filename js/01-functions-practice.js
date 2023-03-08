@@ -43,17 +43,17 @@
 
 //STEP 4
 
-let startNumber01 = parseInt(prompt('Enter your first number:'));
-let startNumber02 = parseInt(prompt('Enter your second number:'));
+// let startNumber01 = parseInt(prompt('Enter your first number:'));
+// let startNumber02 = parseInt(prompt('Enter your second number:'));
 
-modulusNumber(startNumber01, startNumber02);
+// modulusNumber(startNumber01, startNumber02);
 
-function modulusNumber(one, two){
+// function modulusNumber(one, two){
 
-     let modulus = (one % two);
-     return console.log (modulus + ' is the modulus of ' + startNumber01 + ' and ' + startNumber02 + '.');
+//      let modulus = (one % two);
+//      return console.log (modulus + ' is the modulus of ' + startNumber01 + ' and ' + startNumber02 + '.');
 
-};
+// };
 
 
 
