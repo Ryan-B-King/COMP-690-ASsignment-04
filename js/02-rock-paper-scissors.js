@@ -1,12 +1,18 @@
+// Variable declaration.
 let user;
 let computer;
 let compare;
 let play = true;
 
+
+//Calls the game function to run.
 rockPaperScissorsGame();
 
+
+//Game function will run all requested functions to complete the game experience.
 function rockPaperScissorsGame(){
 
+    // Game will run as long as 'play' is 'true'
     while(play === true) {
 
         userOption();
@@ -19,15 +25,20 @@ function rockPaperScissorsGame(){
 
     };
     
+    //If 'play' is 'false', game will end.
     if(play === false){
         alert('Thanks for playing.');
     };
+
 };
 
+//Function collects user input.
 function userOption(){
 
+    //User selection is taken.
     user = prompt('Pick \"Rock\", \"Paper\", or \"Scissors\":').toUpperCase();
 
+    //User selection is evaluated.  Game will continue once validation passes.
     if (user !== 'ROCK' && user !== 'PAPER' && user !== 'SCISSORS'){''
          alert('Try Again.');
          userOption();
@@ -37,10 +48,13 @@ function userOption(){
 
 };
 
+//Function collects computer input.
 function computerOption(){
 
+    //Computer selection is taken randomly.
      computer = Math.round(Math.random()*2);
 
+     //Comptuer selection is converted to an assigned string value.
      if (computer === 0){
         return computer = 'ROCK';
      } else if (computer === 1){
@@ -51,8 +65,10 @@ function computerOption(){
 
 };
 
+//Function reviews user and computer selections
 function compareOptions(){
 
+    //Carparison value is based on the user and computer values.
     if (user === computer){
         return compare = 0;
     } else if (user === 'ROCK' & computer === 'PAPER'){
@@ -73,8 +89,10 @@ function compareOptions(){
     
 };
 
+//Function determines who won the game.
 function finalResults(){
 
+    //Winner is determined by the results from compareOptions().
     switch(compare){
         case 0:
             alert('You chose '+ user + ', and the computer chose ' + computer + '. \n\nIT\'S A TIE!');
@@ -104,6 +122,7 @@ function finalResults(){
 
 };
 
+//Function determines if user wants to continue playing.
 function playAgain(){
 
     return play = confirm('Want to play again?');
