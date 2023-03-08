@@ -1,15 +1,14 @@
 //STEP 1
 
-let testNumber = Int(prompt('Enter a number:'));
+// let testNumber = Int(prompt('Enter a number:'));
 
 
-function halfNumber(arg){
-    arg = arg / 2;
-    return arg;
-}
+// function halfNumber(arg){
+//     arg = arg / 2;
+//     return arg;
+// }
 
-console.log ('Half of ' + testNumber + ' is ' + arg + '.')
-
+// console.log ('Half of ' + testNumber + ' is ' + arg + '.')
 
 
 //STEP 2
@@ -17,12 +16,6 @@ console.log ('Half of ' + testNumber + ' is ' + arg + '.')
 //STEP 3
 
 //STEP 4
-
-
-
-
-
-
 
 
 // Practice with Functions (5 points)
